@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "titulo 1",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro.jpg"
+    },
+    {
+        "titulo": "titulo 2",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro2.jfif"
+    },
+    {
+        "titulo": "titulo 1",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro.jpg"
+    },
+    {
+        "titulo": "titulo 2",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro2.jfif"
+    },
+    {
+        "titulo": "titulo 1",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro.jpg"
+    },
+    {
+        "titulo": "titulo 2",
+        "sipnopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga quis officia maiores eligendi ut, expedita omnis recusandae asperiores voluptas nisi atque quae ratione iure ipsum necessitatibus exercitationem obcaecati! Ex!",
+        "portada": "/img/libro2.jfif"
+    }
+]

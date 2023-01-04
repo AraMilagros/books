@@ -1,0 +1,20 @@
+.itemReco{
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+}
+
+.contenedor-total{
+    display: flex;
+    /* border: 2px solid black; */
+}
+
+.descripcion-reco{
+    width: 60%;
+    text-align: center;
+}
+
+.itemReco p{
+    /* width: 50%; */
+    text-align: justify;
+}
