@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import axios from "axios";
+
+import ItemLibro from "./ItemLibro";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export default function Novedades() {
 
@@ -11,15 +14,17 @@ export default function Novedades() {
     useEffect(() => {
         const peticion = async () => {
             // const response = await busqueda.get(termino);
+            // Aqui se consume un api de libros con axios
             const response = await axios.get(url);
-            console.log(response);
-            setLibros(response.data.docs);
+            console.log(response.data.docs);
+            setLibros(response.data.docs);//con los datos obtenidos se setea el useState de libros
         }
-        peticion();
+        peticion();//se llama la funcion para realizar la peticion
 
     }, [termino]);
 
     const buscar = () => {
+        //cuando se ingrese algun termino en el input, se seteara termino, lo cual, servira para que useeffect se ejecute y vuelva a realizar una peticion a la api
         let termino = document.getElementById("buscador").value;
         setTermino(termino);
     }
@@ -28,21 +33,24 @@ export default function Novedades() {
         <>
             <input type="text" id="buscador"></input>
             <input type="button" value="Buscar" onClick={buscar} />
-            <ul>
+
+            <Row>
                 {libros.length !== 0 && <p>Cargando...</p>}
-                {
-                    libros.slice(0, 10).map((item, i) => {
-                        return (
-                            <li key={i}>
-                                <h4>{item.title}</h4>
-                            </li>
-                        )
-                    })
-                }
+                {libros.slice(0, 10).map((item, i) => {
+                    return (
+                        <Col key={i}>
+                        {/* No actualiza las imagenes 
+                        tambien hay que hacer otra peticion para poder obtener la sipnopsis de cada libro*/}
+                            <ItemLibro index={i}
+                                portada={`https://covers.openlibrary.org/b/id/${i}-S.jpg`}
+                                titulo={item.title}
+                                sipnopsis={"Año de publicación: "+item.first_publish_year}
+                            />
+                        </Col>
+                    );
+                })}
 
-            </ul>
-
-
+            </Row>
         </>
     );
 }
