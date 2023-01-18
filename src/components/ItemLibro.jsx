@@ -2,13 +2,16 @@ import React from "react";
 // estilo de css
 import '../assets/css/itemLibro.css';
 import Button from 'react-bootstrap/Button';
-import { busqueda, libros } from "../api/busqueda";
+// import { busqueda, libros } from "../api/busqueda";
 export default function ItemLibro(props) {
     return (
         <>
             <div key={props.index} className="item m-auto mb-5 mt-3"
                 style={{
-                    background: `url(${props.portada})`
+                    background: `url(${props.portada})`,
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center'
                 }}>
                 <div className="content">
                     <h2>{props.titulo}</h2>
