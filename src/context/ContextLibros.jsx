@@ -38,9 +38,9 @@ export function ContextLibros(props){
 
     return (
         <librosContext.Provider value={libros} >
-            {/* <terminoContext.Provider value={cambioTermino}> */}
+            <terminoContext.Provider value={cambioTermino}>
                 {props.children}
-            {/* </terminoContext.Provider> */}
+            </terminoContext.Provider>
         </librosContext.Provider >
     );
 }
