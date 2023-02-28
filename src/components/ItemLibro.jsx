@@ -10,8 +10,12 @@ export default function ItemLibro(props) {
         <div className="contenedor-total mb-5 mt-3 w-auto">
             <div key={props.index} className="contenedor-item">
                 <div className="description">
-                    <h2>{props.titulo}</h2>
-                    <p>{props.sipnopsis}</p>
+                    <div className="description-text">
+                        {/* CONTROLAR EL LARGO DEL TITULO, ACORTAR PARA QUE NO SOBRESALGA DE SU CONTENEDOR */}
+                        <h2>{props.titulo}</h2>
+                        <p>{props.sipnopsis}</p>
+                    </div>
+
                 </div>
                 <img alt={props.titulo} src={props.portada} className="portada" />
             </div>

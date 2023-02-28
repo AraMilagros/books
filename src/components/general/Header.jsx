@@ -21,11 +21,12 @@ export default function Header() {
                             <Nav.Link href="#" className="ms-1 me-2">Recomendaciones</Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item className="border border-2 ms-1 me-1 ps-1 pe-1">
-                            <Nav.Link href="#">Ingresar</Nav.Link>
+                        <Nav.Item className="ms-1 me-1 ps-1 pe-1">
+                            <Nav.Link href="/login">Ingresar</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item className="border border-2 ps-1 pe-1 ms-1 me-1">
-                            <Nav.Link href="#">Registrar</Nav.Link>
+                        {/* border border-2 */}
+                        <Nav.Item className="ps-1 pe-1 ms-1 me-1">
+                            <Nav.Link href="/registrar">Registrar</Nav.Link>
                         </Nav.Item>
 
                     </Nav>
